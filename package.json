@@ -1,44 +1,23 @@
 {
-  "name": "go-it-hw-10",
-  "version": "2.0.0",
-  "description": "Домашнее задание №9",
-  "homepage": "https://tienam123.github.io/goit-js-hw-09/",
+  "name": "vanilla-app-template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "parcel src/*.html --no-source-maps",
-    "build": "parcel build src/*.html --public-url .",
-    "deploy": "gh-pages -d dist",
-    "predeploy": "npm run build",
-    "public": "gh-pages -d dist"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Tienam123/goit-js-hw-09.git"
-  },
-  "keywords": [],
-  "author": "Vladyslav Honchar <dr.tienam123@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Tienam123/practice-parcel/issues"
-  },
-  "dependencies": {
-    "@partiellkorrekt/parcel-transformer-handlebars": "^1.0.3",
-    "colors.json": "^2.0.0",
-    "flatpickr": "^4.6.13",
-    "handlebars": "^4.7.8",
-    "lodash.throttle": "^4.1.1",
-    "modern-normalize": "^1.1.0",
-    "notiflix": "^3.2.6"
+    "dev": "vite",
+    "build": "vite build --base=/vanilla-app-template/",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.6.0",
-    "cssnano": "^4.1.11",
-    "gh-pages": "^6.1.0",
-    "parcel": "^2.6.0",
-    "parcel-plugin-handlebars-precompile": "^1.0.2",
-    "parcel-reporter-clean-dist": "^1.0.4",
-    "parcel-transformer-hbs": "^1.0.4",
-    "posthtml-include": "^1.7.4",
-    "sass": "^1.69.4"
+    "glob": "^8.1.0",
+    "vite": "^4.5.2"
   },
-  "browserslist": "> 0.5%, last 2 versions, not dead"
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "izitoast": "^1.4.0",
+    "simplelightbox": "^2.14.2",
+    "vite-plugin-full-reload": "^1.0.5",
+    "vite-plugin-html-inject": "^1.0.1"
+  }
 }

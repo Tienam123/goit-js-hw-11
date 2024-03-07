@@ -1,29 +1,33 @@
 <!DOCTYPE html>
-<html lang='ru'>
+<html lang="en">
 <head>
-  <meta charset='UTF-8' />
-  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-  <title>Pocemons</title>
-  <script type="module" src="./js/index.js"></script>
-  <link rel='stylesheet' href='./scss/style.scss'>
+  <meta charset="UTF-8" />
+  <link rel="icon"
+        type="image/svg+xml"
+        href="./img/javascript.svg" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+  <title>Vanilla App Template</title>
+  <link rel="stylesheet"
+        href="./css/styles.css" />
 </head>
 <body>
-<header>
-  <a href="./index.html"><img src="./js-logo-xs.png" alt="JavaScript logo" /></a>
-  <div>
-    <h1>Vanilla JavaScript</h1>
-    <p>i.e., JavaScript without any (UI) framework or library</p>
-  </div>
-</header>
-<a class="button" href="./index.html">On the Main Page</a>
-<form style="margin-top: 50px;" class="form-group">
-  <div class="form-group">
-    <input type="text" name="query" class="form-control" id="">
-  </div>
-  <button style="margin-top: 30px;" type="submit">Send Form</button>
+<form class="js-form">
+  <label>
+    <input autocomplete="off"
+           type="text"
+           name="query"
+           placeholder="Search images ..."
+           class="input">
+  </label>
+  <button type="submit">Search</button>
 </form>
-<div style="margin-top: 50px;" class="js-card-container">
-
+<ul class="js-gallery gallery">
+</ul>
+<div class="loader-backdrop hidden">
+  <span class="loader"></span>
 </div>
+<script type="module"
+        src="./main.js"></script>
 </body>
 </html>
